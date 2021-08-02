@@ -13,6 +13,7 @@ $(document).ready(function () {
     })
 
     $("#9AM .textarea").val(localStorage.getItem("9AM"));
+    $("#10AM .textarea").val(localStorage.getItem("10AM"));
     
     var timer = setInterval(schedule, 100000)
 
