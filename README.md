@@ -26,6 +26,7 @@
   https://github.com/johnsonr84/day-planner
 
   ## Mock-Up
+  ![day-planner demo png](Assets/05-third-party-apis-homework-demo.gif)
   <table>
   <tr>
     <td>day-planner</td>
