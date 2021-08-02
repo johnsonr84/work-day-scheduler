@@ -6,10 +6,10 @@ $(document).ready(function () {
 
     $(".saveBtn").on("click", function () {
         console.log(this);
-        var event = $(this).siblings(".textarea").val();
+        var toDo = $(this).siblings(".textarea").val();
         var time = $(this).parent().attr("id");
 
-        localStorage.setItem(time, event);
+        localStorage.setItem(time, toDo);
     })
 
     $("#09 .textarea").val(localStorage.getItem("09"));
