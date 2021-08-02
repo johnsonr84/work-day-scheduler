@@ -12,15 +12,15 @@ $(document).ready(function () {
         localStorage.setItem(event, time);
     })
 
-    $("#9AM .textarea").val(localStorage.getItem("9AM"));
-    $("#10AM .textarea").val(localStorage.getItem("10AM"));
-    $("#11AM .textarea").val(localStorage.getItem("11AM"));
-    $("#12PM .textarea").val(localStorage.getItem("12PM"));
-    $("#1PM .textarea").val(localStorage.getItem("1PM"));
-    $("#2PM .textarea").val(localStorage.getItem("2PM"));
-    $("#3PM .textarea").val(localStorage.getItem("3PM"));
-    $("#4PM .textarea").val(localStorage.getItem("4PM"));
-    $("#5PM .textarea").val(localStorage.getItem("5PM"));
+    $("#09 .textarea").val(localStorage.getItem("09"));
+    $("#10 .textarea").val(localStorage.getItem("10"));
+    $("#11 .textarea").val(localStorage.getItem("11"));
+    $("#12 .textarea").val(localStorage.getItem("12"));
+    $("#13 .textarea").val(localStorage.getItem("13"));
+    $("#14 .textarea").val(localStorage.getItem("14"));
+    $("#15 .textarea").val(localStorage.getItem("15"));
+    $("#16 .textarea").val(localStorage.getItem("16"));
+    $("#17 .textarea").val(localStorage.getItem("17"));
     
     var timer = setInterval(schedule, 100000)
 
