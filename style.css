@@ -30,7 +30,7 @@ body {
     border-radius: 15px;
   }
   
-  .row {
+  .event-row {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;;
@@ -55,6 +55,7 @@ body {
   .future {
     background-color: #77dd77;
     color: white;
+    border-radius: 0 15px 15px 0px;
   }
   
   .saveBtn {
