@@ -26,21 +26,21 @@ $(document).ready(function () {
 
 function schedule() {
 
-    var eventRow = document.querySelectorAll('.event-row');
-    console.log(eventRow)
+    var timeRows = document.querySelectorAll('.time-row');
+    console.log(timeRows)
 
-    var eventTime = moment().format('HH');
-    console.log(eventTime)
+    var currentTime = moment().format('HH');
+    console.log(currentTime)
 
-    $(".event-row").each(function () {
+    $(".time-row").each(function () {
 
-        var eventBlock = $(this).attr("id")
-        console.log(eventBlock)
+        var timeBlock = $(this).attr("id")
+        console.log(timeBlock)
 
-        if (eventBlock < eventTime) {
+        if (timeBlock < currentTime) {
             $(this).removeClass("present future")
             $(this).addClass("past")
-        } else if (eventBlock > eventTime) {
+        } else if (timeBlock > currentTime) {
             $(this).removeClass("past present")
             $(this).addClass("future")
 
