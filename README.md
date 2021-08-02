@@ -29,22 +29,10 @@
   ![day-planner demo png](Assets/05-third-party-apis-homework-demo.gif)
   <table>
   <tr>
-    <td>day-planner</td>
-     <td>day-planner</td>
+    <td>day-planner demo</td>
   </tr>
   <tr>
-    <td><img src="./img/planner_1.png" height=300 alt="screenshot of planner"></td>
-    <td><img src="./img/planner_2.png" height=300 alt="screenshot of planner"></td>
-  </tr>
-  </table>
-  <table>
-  <tr>
-     <td>day-planner</td>
-     <td>day-planner</td>
-  </tr>
-   <tr>
-    <td><img src="./img/planner_3.png" height=300 alt="screenshot of planner"></td>
-    <td><img src="./img/planner_4.png" height=300 alt="screenshot of planner"></td>
+    <td><img src="Assets/day-planner.png" height=300 alt="screenshot of planner"></td>
   </tr>
  </table>
 
