@@ -32,7 +32,7 @@
     <td>day-planner demo</td>
   </tr>
   <tr>
-    <td><img src="Assets/day-planner.png" height=350 alt="screenshot of planner"></td>
+    <td><img src="Assets/day-planner.png" height=400 alt="screenshot of planner"></td>
   </tr>
  </table>
 
