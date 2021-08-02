@@ -9,7 +9,7 @@ $(document).ready(function () {
         var event = $(this).siblings(".textarea").val();
         var time = $(this).parent().attr("id");
 
-        localStorage.setItem(event, time);
+        localStorage.setItem(time, event);
     })
 
     $("#09 .textarea").val(localStorage.getItem("09"));
