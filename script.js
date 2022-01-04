@@ -3,15 +3,17 @@ $(document).ready(function () {
     document.getElementById("currentDay").innerHTML = now;
 
     console.log(now);
-
+    // listen for save button clicks
     $(".saveBtn").on("click", function () {
         console.log(this);
+        // get nearby values
         var toDo = $(this).siblings(".textarea").val();
         var time = $(this).parent().attr("id");
-
+        // save in localStorage
         localStorage.setItem(time, toDo);
     })
-
+ 
+    // load any saved data from localStorage
     $("#09 .textarea").val(localStorage.getItem("09"));
     $("#10 .textarea").val(localStorage.getItem("10"));
     $("#11 .textarea").val(localStorage.getItem("11"));
