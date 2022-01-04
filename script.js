@@ -24,6 +24,7 @@ $(document).ready(function () {
     $("#16 .textarea").val(localStorage.getItem("16"));
     $("#17 .textarea").val(localStorage.getItem("17"));
     
+    // set up interval to check if current time needs to be updated
     var timer = setInterval(schedule, 100000)
 
 function schedule() {
