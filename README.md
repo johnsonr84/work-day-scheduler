@@ -1,28 +1,33 @@
-# day-planner
+<h1 align="center"><a href="https://github.com/johnsonr84/day-planner"> Day Planner 🗓️</a></h1>
+
+ ## Description 
+  Simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
   [![github-follow](https://img.shields.io/github/followers/johnsonr84?label=Follow&logoColor=lightgrey&style=social)](https://github.com/johnsonr84)
   [![project-languages-used](https://img.shields.io/github/languages/count/johnsonr84/readme-generator?color=orange)](https://github.com/johnsonr84/day-planner)
   [![project-top-language](https://img.shields.io/github/languages/top/johnsonr84/readme-generator?color=yellow)](https://github.com/johnsonr84/day-planner)
   [![license](https://img.shields.io/badge/license-mit-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
 
+## Built With
+[![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)](https://www.javascript.com/)
+
   ## Table of Contents 
   * [Description](#Description)
   * [Project URL](#Project-URL)
-  * [Mock-up](#Mock-up)
+  * [Deployment](#Deployment)
+  * [Demo/Screenshots](#Demo/Screenshots)
   * [Usage](#Usage)
   * [Credits](#Credits)
   * [License](#License)
-  * [Features](#Features)
-  * [Tests](#Tests)
   * [Resources](#Resources)
   * [Contact](#Contact)
-  * [Designed and built by](#Designed-and-built-by)
+  * [Author](#Author)
   #
-  
-  ## Description 
-  Simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
   ## Project URL
+  https://github.com/johnsonr84/day-planner
+
+
   https://johnsonr84.github.io/day-planner/
 
   ## Mock-Up
@@ -36,9 +41,6 @@
   </tr>
  </table>
 
-  ## Installation 
-  No installations required at this time 
-
   ## Usage 
   No usage requirements
 
@@ -47,12 +49,6 @@
 
   ## License 
   This project is [mit](https://choosealicense.com/licenses/mit/) licensed.
-
-  ## Features
-  Coming soon maybe 
-
-  ## Tests
-  No tests required at this time 
 
   ## Resources
   * [Choose a License](https://choosealicense.com/)
@@ -70,7 +66,7 @@
   ## Contact
   Email: robertcjohnson1984@gmail.com 
 
-  ## Designed and built by
+  ## Author
   Author(s): Rob Johnson  
 
   GitHub: https://github.com/johnsonr84/ 
