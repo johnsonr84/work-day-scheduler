@@ -1,6 +1,8 @@
 $(document).ready(function() {
+
     // listen for save button clicks
     $('.saveBtn').on('click', function() {
+
       // get nearby values
       var value = $(this)
         .siblings('.description')
@@ -21,6 +23,7 @@ $(document).ready(function() {
       }, 5000);
     });
   
+
     function hourUpdater() {
       // get current number of hours
       var currentHour = moment().hours();
@@ -47,11 +50,15 @@ $(document).ready(function() {
       });
     }
   
+
+
     hourUpdater();
   
     // set up interval to check if current time needs to be updated
     var interval = setInterval(hourUpdater, 15000);
   
+
+    
     // load any saved data from localStorage
     $('#hour-9 .description').val(localStorage.getItem('hour-9'));
     $('#hour-10 .description').val(localStorage.getItem('hour-10'));
