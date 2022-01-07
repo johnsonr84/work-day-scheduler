@@ -1,11 +1,11 @@
-<h1 align="center"><a href="https://github.com/johnsonr84/day-planner"> Work Day Scheduler 🗓️</a></h1>
+<h1 align="center"><a href=" https://johnsonr84.github.io/work-day-scheduler/"> Work Day Scheduler 🗓️</a></h1>
 
  ## Description 
   Simple calendar application that allows a user to save events for each hour of the workday. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
   [![github-follow](https://img.shields.io/github/followers/johnsonr84?label=Follow&logoColor=lightgrey&style=social)](https://github.com/johnsonr84)
-  [![project-languages-used](https://img.shields.io/github/languages/count/johnsonr84/readme-generator?color=orange)](https://github.com/johnsonr84/day-planner)
-  [![project-top-language](https://img.shields.io/github/languages/top/johnsonr84/readme-generator?color=yellow)](https://github.com/johnsonr84/day-planner)
+  [![project-languages-used](https://img.shields.io/github/languages/count/johnsonr84/readme-generator?color=orange)](https://github.com/johnsonr84/work-day-scheduler)
+  [![project-top-language](https://img.shields.io/github/languages/top/johnsonr84/readme-generator?color=yellow)](https://github.com/johnsonr84/work-day-scheduler)
   [![license](https://img.shields.io/badge/license-mit-brightgreen.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Built With
@@ -25,10 +25,10 @@
   #
 
   ## Project URL
-  https://github.com/johnsonr84/day-planner
+  https://github.com/johnsonr84/work-day-scheduler
 
-
-  https://johnsonr84.github.io/day-planner/
+  ## Deployment
+  https://johnsonr84.github.io/work-day-scheduler/
 
   ## Mock-Up
   ![day-planner demo png](Assets/05-third-party-apis-homework-demo.gif)
