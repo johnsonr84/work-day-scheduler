@@ -1,7 +1,7 @@
-<h1 align="center"><a href="https://github.com/johnsonr84/day-planner"> Day Planner 🗓️</a></h1>
+<h1 align="center"><a href="https://github.com/johnsonr84/day-planner"> Work Day Scheduler 🗓️</a></h1>
 
  ## Description 
-  Simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+  Simple calendar application that allows a user to save events for each hour of the workday. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
   [![github-follow](https://img.shields.io/github/followers/johnsonr84?label=Follow&logoColor=lightgrey&style=social)](https://github.com/johnsonr84)
   [![project-languages-used](https://img.shields.io/github/languages/count/johnsonr84/readme-generator?color=orange)](https://github.com/johnsonr84/day-planner)
