@@ -1,57 +1,69 @@
-$(document).ready(function () {
-    var now = moment().format('LLLL');
-    document.getElementById("currentDay").innerHTML = now;
-
-    console.log(now);
+$(document).ready(function() {
     // listen for save button clicks
-    $(".saveBtn").on("click", function () {
-        console.log(this);
-        // get nearby values
-        var toDo = $(this).siblings(".textarea").val();
-        var time = $(this).parent().attr("id");
-        // save in localStorage
-        localStorage.setItem(time, toDo);
-    })
- 
-    // load any saved data from localStorage
-    $("#09 .textarea").val(localStorage.getItem("09"));
-    $("#10 .textarea").val(localStorage.getItem("10"));
-    $("#11 .textarea").val(localStorage.getItem("11"));
-    $("#12 .textarea").val(localStorage.getItem("12"));
-    $("#13 .textarea").val(localStorage.getItem("13"));
-    $("#14 .textarea").val(localStorage.getItem("14"));
-    $("#15 .textarea").val(localStorage.getItem("15"));
-    $("#16 .textarea").val(localStorage.getItem("16"));
-    $("#17 .textarea").val(localStorage.getItem("17"));
-    
-    // set up interval to check if current time needs to be updated
-    var timer = setInterval(schedule, 100000)
-
-function schedule() {
-
-    var timeRows = document.querySelectorAll('.time-row');
-    console.log(timeRows)
-
-    var currentTime = moment().format('HH');
-    console.log(currentTime)
-
-    $(".time-row").each(function () {
-
-        var timeBlock = $(this).attr("id")
-        console.log(timeBlock)
-
-        if (timeBlock < currentTime) {
-            $(this).removeClass("present future")
-            $(this).addClass("past")
-        } else if (timeBlock > currentTime) {
-            $(this).removeClass("past present")
-            $(this).addClass("future")
-
+    $('.saveBtn').on('click', function() {
+      // get nearby values
+      var value = $(this)
+        .siblings('.description')
+        .val();
+      var time = $(this)
+        .parent()
+        .attr('id');
+  
+      // save in localStorage
+      localStorage.setItem(time, value);
+  
+      // Show notification that item was saved to localStorage by adding class 'show'
+      $('.notification').addClass('show');
+  
+      // Timeout to remove 'show' class after 5 seconds
+      setTimeout(function() {
+        $('.notification').removeClass('show');
+      }, 5000);
+    });
+  
+    function hourUpdater() {
+      // get current number of hours
+      var currentHour = moment().hours();
+  
+      // loop over time blocks
+      $('.time-block').each(function() {
+        var blockHour = parseInt(
+          $(this)
+            .attr('id')
+            .split('-')[1]
+        );
+  
+        // check if we've moved past this time
+        if (blockHour < currentHour) {
+          $(this).addClass('past');
+        } else if (blockHour === currentHour) {
+          $(this).removeClass('past');
+          $(this).addClass('present');
         } else {
-            $(this).removeClass("future past")
-            $(this).addClass("present")
+          $(this).removeClass('past');
+          $(this).removeClass('present');
+          $(this).addClass('future');
         }
-    })
-}
-schedule();
-})
+      });
+    }
+  
+    hourUpdater();
+  
+    // set up interval to check if current time needs to be updated
+    var interval = setInterval(hourUpdater, 15000);
+  
+    // load any saved data from localStorage
+    $('#hour-9 .description').val(localStorage.getItem('hour-9'));
+    $('#hour-10 .description').val(localStorage.getItem('hour-10'));
+    $('#hour-11 .description').val(localStorage.getItem('hour-11'));
+    $('#hour-12 .description').val(localStorage.getItem('hour-12'));
+    $('#hour-13 .description').val(localStorage.getItem('hour-13'));
+    $('#hour-14 .description').val(localStorage.getItem('hour-14'));
+    $('#hour-15 .description').val(localStorage.getItem('hour-15'));
+    $('#hour-16 .description').val(localStorage.getItem('hour-16'));
+    $('#hour-17 .description').val(localStorage.getItem('hour-17'));
+  
+    // display current day on page
+    $('#currentDay').text(moment().format('dddd, MMMM Do'));
+  });
+  
